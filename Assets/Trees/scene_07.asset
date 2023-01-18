@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c3f478ef69fbe04fa9ed3664a8a443e, type: 3}
+  m_Name: scene_07
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"type":"NodeCanvas.DialogueTrees.DialogueTree","nodes":[{"statement":{"_text":"2018
+    - Russia sponsors new peace talks. President Assad''s removal is not a pre-condition.
+    Does that make any sense?"},"_position":{"x":478.0,"y":12.0},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"0"},{"availableChoices":[{"statement":{"_text":"Not
+    a chance. Fight on locally, Russians don''t care about Syrians at all"}},{"statement":{"_text":"I
+    have no idea. I just want this to end. Enough is enough"}},{"statement":{"_text":"I''ve
+    given up. I''ll try to escape to a better place."}}],"_name":"","_tag":"","_position":{"x":466.3671,"y":102.8357},"_comment":"","$type":"NodeCanvas.DialogueTrees.MultipleChoiceNode","$id":"1"},{"_action":{"sceneName":{"_value":"Flee_Syria"},"mode":{},"$type":"NodeCanvas.Tasks.Actions.LoadScene"},"_position":{"x":262.4726,"y":348.7814},"$type":"NodeCanvas.DialogueTrees.ActionNode","$id":"2"},{"_position":{"x":279.2355,"y":464.0783},"$type":"NodeCanvas.DialogueTrees.FinishNode","$id":"3"},{"_action":{"sceneName":{"_value":"Flee_Syria"},"mode":{},"$type":"NodeCanvas.Tasks.Actions.LoadScene"},"_position":{"x":479.1626,"y":354.0019},"$type":"NodeCanvas.DialogueTrees.ActionNode","$id":"4"},{"_position":{"x":514.0008,"y":466.4661},"$type":"NodeCanvas.DialogueTrees.FinishNode","$id":"5"},{"_action":{"sceneName":{"_value":"Flee_Syria"},"mode":{},"$type":"NodeCanvas.Tasks.Actions.LoadScene"},"_position":{"x":716.1447,"y":355.0654},"$type":"NodeCanvas.DialogueTrees.ActionNode","$id":"6"},{"_position":{"x":753.5669,"y":467.7581},"$type":"NodeCanvas.DialogueTrees.FinishNode","$id":"7"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"4"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"6"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"4"},"_targetNode":{"$ref":"5"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"6"},"_targetNode":{"$ref":"7"},"$type":"NodeCanvas.DialogueTrees.DTConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}},"derivedData":{"actorParameters":[{"_keyName":"","_id":"995eb407-c979-4411-b887-ec0bc565c24c"}],"$type":"NodeCanvas.DialogueTrees.DialogueTree+DerivedSerializationData"}}'
+  _objectReferences: []
+  _graphSource:
+    _version: 3.25
+    _category: 
+    _comments: 
+    _translation: {x: 206, y: -35}
+    _zoomFactor: 0.9623516
+  _haltSerialization: 0
+  actorParameters:
+  - _keyName: 
+    _id: 995eb407-c979-4411-b887-ec0bc565c24c
+    _actorObject: {fileID: 0}

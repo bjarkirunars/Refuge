@@ -1,0 +1,221 @@
+{
+    "type": "NodeCanvas.DialogueTrees.DialogueTree",
+    "nodes": [
+        {
+            "statement": {
+                "_text": "Hello, how are you doing?",
+                "_audio": 1
+            },
+            "_actorName": "Megan",
+            "_actorParameterID": "ec8c9f41-a794-4a91-bd58-f27ac5a103fd",
+            "_position": {
+                "x": 478.0,
+                "y": 181.0
+            },
+            "$type": "NodeCanvas.DialogueTrees.StatementNode",
+            "$id": "0"
+        },
+        {
+            "availableChoices": [
+                {
+                    "statement": {
+                        "_text": "I'm feeling a bit under the weather",
+                        "_audio": 2
+                    }
+                },
+                {
+                    "statement": {
+                        "_text": "I am doing fantastic!",
+                        "_audio": 3
+                    }
+                }
+            ],
+            "_actorName": "Me",
+            "_actorParameterID": "a1ba6bb3-5441-4916-ac83-223135515f5a",
+            "_position": {
+                "x": 497.0,
+                "y": 299.0
+            },
+            "$type": "NodeCanvas.DialogueTrees.MultipleChoiceNode",
+            "$id": "1"
+        },
+        {
+            "statement": {
+                "_text": "That's too bad, anything I can do to help?",
+                "_audio": 4
+            },
+            "_actorName": "Megan",
+            "_actorParameterID": "ec8c9f41-a794-4a91-bd58-f27ac5a103fd",
+            "_position": {
+                "x": 314.0,
+                "y": 492.9999
+            },
+            "$type": "NodeCanvas.DialogueTrees.StatementNode",
+            "$id": "2"
+        },
+        {
+            "saySelection": true,
+            "availableChoices": [
+                {
+                    "statement": {
+                        "_text": "Could you grab me a cup of tea?",
+                        "_audio": 5
+                    }
+                },
+                {
+                    "statement": {
+                        "_text": "No, but thanks for the offer",
+                        "_audio": 6
+                    }
+                }
+            ],
+            "_actorName": "Me",
+            "_actorParameterID": "a1ba6bb3-5441-4916-ac83-223135515f5a",
+            "_position": {
+                "x": 302.0,
+                "y": 604.0
+            },
+            "$type": "NodeCanvas.DialogueTrees.MultipleChoiceNode",
+            "$id": "3"
+        },
+        {
+            "statement": {
+                "_text": "Of course, be right back!",
+                "_audio": 7
+            },
+            "_actorName": "Megan",
+            "_actorParameterID": "ec8c9f41-a794-4a91-bd58-f27ac5a103fd",
+            "_position": {
+                "x": 436.0,
+                "y": 807.0
+            },
+            "$type": "NodeCanvas.DialogueTrees.StatementNode",
+            "$id": "4"
+        },
+        {
+            "_position": {
+                "x": 692.0,
+                "y": 647.0
+            },
+            "$type": "NodeCanvas.DialogueTrees.FinishNode",
+            "$id": "5"
+        },
+        {
+            "statement": {
+                "_text": "That's so good to hear!",
+                "_audio": 8
+            },
+            "_actorName": "Megan",
+            "_actorParameterID": "ec8c9f41-a794-4a91-bd58-f27ac5a103fd",
+            "_position": {
+                "x": 636.0,
+                "y": 496.0
+            },
+            "$type": "NodeCanvas.DialogueTrees.StatementNode",
+            "$id": "6"
+        },
+        {
+            "_actorName": "Megan",
+            "_actorParameterID": "ec8c9f41-a794-4a91-bd58-f27ac5a103fd",
+            "_position": {
+                "x": 664.6929,
+                "y": 837.9296
+            },
+            "$type": "NodeCanvas.DialogueTrees.ActionNode"
+        }
+    ],
+    "connections": [
+        {
+            "_sourceNode": {
+                "$ref": "0"
+            },
+            "_targetNode": {
+                "$ref": "1"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "1"
+            },
+            "_targetNode": {
+                "$ref": "2"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "1"
+            },
+            "_targetNode": {
+                "$ref": "6"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "2"
+            },
+            "_targetNode": {
+                "$ref": "3"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "3"
+            },
+            "_targetNode": {
+                "$ref": "4"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "3"
+            },
+            "_targetNode": {
+                "$ref": "5"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "4"
+            },
+            "_targetNode": {
+                "$ref": "5"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "6"
+            },
+            "_targetNode": {
+                "$ref": "5"
+            },
+            "$type": "NodeCanvas.DialogueTrees.DTConnection"
+        }
+    ],
+    "canvasGroups": [],
+    "localBlackboard": {
+        "_variables": {
+
+        }
+    },
+    "derivedData": {
+        "actorParameters": [
+            {
+                "_keyName": "Megan",
+                "_id": "ec8c9f41-a794-4a91-bd58-f27ac5a103fd",
+                "_actorObject": 9
+            },
+            {
+                "_keyName": "Me",
+                "_id": "a1ba6bb3-5441-4916-ac83-223135515f5a"
+            }
+        ],
+        "$type": "NodeCanvas.DialogueTrees.DialogueTree+DerivedSerializationData"
+    }
+}

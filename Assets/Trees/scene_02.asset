@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c3f478ef69fbe04fa9ed3664a8a443e, type: 3}
+  m_Name: scene_02
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"type":"NodeCanvas.DialogueTrees.DialogueTree","nodes":[{"statement":{"_text":"Government
+    responds by using deadly force on protestants. Protesters and others are killed.
+    Will you protest?"},"_position":{"x":478.0,"y":13.26906},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"0"},{"availableChoices":[{"statement":{"_text":"On
+    with the protest!"}},{"statement":{"_text":"Stay out of the way, this will pass
+    soon enough"}}],"_name":"","_tag":"","_position":{"x":466.3671,"y":102.8357},"_comment":"","$type":"NodeCanvas.DialogueTrees.MultipleChoiceNode","$id":"1"},{"_action":{"sceneName":{"_value":"Scene_Deaths"},"mode":{},"$type":"NodeCanvas.Tasks.Actions.LoadScene"},"_position":{"x":275.9812,"y":319.686},"$type":"NodeCanvas.DialogueTrees.ActionNode","$id":"2"},{"_position":{"x":285.4702,"y":459.9218},"$type":"NodeCanvas.DialogueTrees.FinishNode","$id":"3"},{"_action":{"sceneName":{"_value":"Scene_03"},"mode":{},"$type":"NodeCanvas.Tasks.Actions.LoadScene"},"_position":{"x":479.1626,"y":354.0019},"$type":"NodeCanvas.DialogueTrees.ActionNode","$id":"4"},{"_position":{"x":514.0008,"y":466.4661},"$type":"NodeCanvas.DialogueTrees.FinishNode","$id":"5"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"4"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"4"},"_targetNode":{"$ref":"5"},"$type":"NodeCanvas.DialogueTrees.DTConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}},"derivedData":{"actorParameters":[{"_keyName":"","_id":"995eb407-c979-4411-b887-ec0bc565c24c"}],"$type":"NodeCanvas.DialogueTrees.DialogueTree+DerivedSerializationData"}}'
+  _objectReferences: []
+  _graphSource:
+    _version: 3.25
+    _category: 
+    _comments: 
+    _translation: {x: 671, y: 2}
+    _zoomFactor: 0.25000942
+  _haltSerialization: 0
+  actorParameters:
+  - _keyName: 
+    _id: 995eb407-c979-4411-b887-ec0bc565c24c
+    _actorObject: {fileID: 0}
